@@ -8,7 +8,9 @@ module.exports = function() {
         id: n + 1,
         name: faker.name.findName(),
         avatar: faker.image.avatar(),
-        bio: faker.lorem()
+        phone: faker.phone.phoneNumber(),
+        email: faker.internet.email(),
+        department: _.sample(["Customer Support", "Engineering", "Sales"])
       };
     })
   };

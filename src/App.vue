@@ -1,11 +1,17 @@
 <template>
-  <div class="mx-auto p-6 m bg-blue-200">
-    <router-view />
+  <div class="mx-auto p-6 bg-gray-200">
+    <simple-list />
   </div>
 </template>
 
 <script>
-export default {};
-</script>
+import SimpleList from "@/components/SimpleList";
+import CardList from "@/components/CardList";
 
-<style></style>
+export default {
+  components: {
+    SimpleList,
+    CardList
+  }
+};
+</script>
